@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0w-auto..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400&display=swap" rel="stylesheet">
+
  
 
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -222,10 +224,10 @@
 
 
 <!--Form-->
-<div class="flex flex-col items-center justify-center min-h-screen bg-transparent px-4 mt-0">
+<div class="flex flex-col items-center justify-center min-h-screen bg-transparent px-4 -mt-20 md:mt-4 ">
   <div class="w-full px-0 md:px-64">
     <h1 class="titulos text-2xl sm:text-4xl lg:text-[42px] text-custom-color text-center md:text-left mb-4">Contacto</h1>
-    <p class="subtitulo-form text-center md:text-left mb-2">Comenzá a implementar tecnología en salud</p>
+    <p class="subtitulo-form text-center md:text-left mb-2 mx-10 md:mx-0">Comenzá a implementar tecnología en salud</p>
 
     <form action="#" method="POST" class=" px-0 pt-6 pb-8 mb-4">
       <div class="mb-4">
@@ -259,13 +261,36 @@
       </div>
     </form>
   </div>
+</div> 
 </div>
 
+<footer class="footer -mt-20">
+  <div class="w-full mx-auto sm:px-6 py-4 px-8 md:px-16">
+    <!-- Top section -->
+    <div class="flex flex-col sm:flex-row justify-between items-center ">
+      <!-- Logo y nombre de la empresa -->
+      <div class="mb-4 sm:mb-0">
+        <img src="./src/img/logoblanco.svg" alt="Healthia" class="ml-0 h-10">
+       
+      </div>
+      <!-- Menú de navegación -->
+      <nav class="space-x-6 ">
+        <a href="#" class="text-footer">Productos</a>
+        <a href="#" class="text-footer">Clientes</a>
+        <a href="#" class="text-footer">Nosotros</a>
+        <a href="#" class="text-footer">Contacto</a>
+      </nav>
+    </div>
+  </div>
+    <!-- Línea divisoria -->
+    <div class="linea-foot"></div>
+    <!-- Bottom section -->
+    <div class="flex flex-col sm:flex-row justify-between items-center py-6 px-8 md:px-16">
+      <span class="foot-copy mb-6 md:mb-0 text-center">Copyright 2024 - Healthia - Todos los derechos reservados</span>
+      <span class="foot-desarrollo">Desarrollado by <strong>AXYOMAGLOBAL</strong></span>
+    </div>
 
-
-
-      
-</div>
+</footer>
 
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

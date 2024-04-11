@@ -170,6 +170,45 @@ line-height: normal;
 .btn-enviar:hover {
   background-color: grey; /* Color de fondo del botón al hacer hover */
 }
+
+.footer{
+  background-color: #041926;
+}
+
+.linea-foot{
+  color: #00F09E;
+  width: 100%;
+  border: 0.5px solid;
+}
+
+.text-footer {
+  color: #FCFAF9;
+
+font-family: Epilogue;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.foot-copy{
+  color: #FFF;
+
+font-family: Epilogue;
+font-size: 14px;
+font-style:normal;
+font-weight: lighter;
+line-height: 118.4%;
+}
+.foot-desarrollo {
+  color: #FFF;
+font-family: Epilogue;
+font-size: 14px;
+font-style: italic;
+font-weight: lighter;
+line-height: 118.4%;
+
+}
+
 @media (min-width: 640px) {
   .aspect-w-1 {
     width: 100%; /* Esto hará que la tarjeta sea completamente responsiva dentro de su contenedor. */
