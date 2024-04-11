@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content-layer{
+  background-image: url('/src/img/BG.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+.banner {
+    background-image: url('/src/img/banner.svg'); 
+  }
+
+.titulos{
+  font-family: Epilogue;
+  font-style: normal;
+  font-weight: 700;
+}
+.gradient-border {
+  display: inline-block; 
+  padding: 16px 24px;
+  border-radius: 25px;
+  transition: background-image 0.3s ease-in-out;
+  background-image: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain; 
+  text-align: center; 
+}
+
+
+.gradient-border:hover {
+  background-image: url('/src/img/hoverbutton.svg'); 
+}
+
+
+.custom-color{
+  font-size: 42px;
+  font-family: Epilogue;
+  color: #37454F;
+  margin-left: 15%;
+}
+  
+.swiper-container {
+  margin-bottom: 40px; 
+}
+
+.swiper-pagination {
+  position: static;
+  text-align: center; 
+  margin-top: 12px;
+}
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background: white;
+  opacity: 1;
+  border: 1px solid #04A2FD;
+  margin-right: 10px; 
+  
+}
+
+.swiper-pagination-bullet-active {
+  background: #04A2FD;
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+ 
+}
+.group-hover\:opacity-100 {
+  opacity: 0;
+}
+
+/* Posiciona el texto para que aparezca en el lugar correcto */
+.group-hover\:top-32 {
+  top: 8rem;
+}
+.group {
+  background: linear-gradient(116deg, rgba(250, 250, 250, 0.90) 0%, rgba(255, 252, 252, 0.90) 97.16%);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.group:hover {
+  box-shadow: 0px 0px 10px 3px #00EAA4;
+}
+
+.titulo-tarjeta{
+  font-size: 36px;
+  color: #041926;
+  font-family: Epilogue;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.texto-tarjeta{
+  font-size: 13px;
+  color: #041926;
+  font-family: Epilogue;
+  font-weight: lighter;
+  text-align: center;
+
+}
+.custom-shadow {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.custom-hover-shadow:hover {
+  box-shadow: 0px 0px 10px 3px #00EAA4;
+  border: solid 3px transparent;
+  
+}
+
+.subtitulo-form {
+  color: #041926;
+font-family: Epilogue;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.team-swiper-pagination{
+  margin-top: -30px;
+}
+
+.input-style {
+  background-color: #D9D9D9; 
+  border: 1px solid #e5e7eb; 
+  border-radius: 20px; 
+  padding: 20px 16px; 
+  font-size: 1rem; 
+  color: #3d3d3d; 
+  font-weight: lighter;
+  width: 100%; 
+  font-family: Epilogue;
+  
+  box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.05); /* Sombra interior suave */
+}
+
+.input-style::placeholder {
+  color: #000; 
+
+  font-family: Epilogue;
+
+}
+
+.input-style:focus {
+  outline: none; /* Remover el anillo de enfoque predeterminado */
+  border-color: #6ee7b7; /* Color de borde al enfocar */
+  box-shadow: 0 0 0 3px rgba(110, 231, 183, 0.5); /* Sombra exterior al enfocar */
+}
+
+.btn-enviar {
+  border-radius: 20px;
+  background: #00F09E;
+  color: white; /* Color de texto del botón */
+  padding: 8px 64px; /* Espaciado interno del botón */
+  font-size: 1.2rem; 
+  font-family: Epilogue;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05); /* Sombra suave del botón */
+}
+
+
+.btn-enviar:hover {
+  background-color: grey; /* Color de fondo del botón al hacer hover */
+}
+@media (min-width: 640px) {
+  .aspect-w-1 {
+    width: 100%; /* Esto hará que la tarjeta sea completamente responsiva dentro de su contenedor. */
+  }
+  .aspect-h-1 {
+    height: 276px; /* Esto mantiene la proporción del aspecto, pero puedes ajustarlo a 276px si es necesario. */
+  }
+}
+
+/* Estilos base para dispositivos móviles */
+@media (max-width: 640px) {
+
+ 
+ 
+  .titulo-tarjeta {
+   margin-top: 5px;
+    font-size: 1rem; 
+  }
+   
+  
+  .texto-tarjeta {
+ 
+    font-size: 10px; 
+  }
+
+  .h-20, .w-20 {
+    
+    height: 3rem; /* 48px */
+    width: 3rem; /* 48px */
+  }
+  .aspect-w-1 {
+    width: 100%; 
+    height: auto;
+  }
+  .aspect-h-1 {
+    height: 136px; 
+  }
+  .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+  }
+  .content-layer{
+    background-image: none;
+  }
+  .subtitulo-form {
+   
+  font-size: 20px;
+  
+  }
+
+}
+@media (max-width: 768px) {
+  .empresa
+  {
+    background: linear-gradient(123deg, #000 6.41%, #1387CB 141.44%);
+
+  }
+}

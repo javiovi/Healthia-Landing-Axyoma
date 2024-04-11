@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0w-auto..900;1,100..900&display=swap" rel="stylesheet">
+ 
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link href="./dist/output.css" rel="stylesheet"> 
+
+    <title>Healthia</title>
+</head>
+<body class=" bg-[#F3F3F3] ">
+ 
+
+    <nav class="bg-gradient-to-r from-[#FFFFFF] to-[#DAF4EB] p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <!-- Logo y nombre de la compañía -->
+            <div class="flex items-center">
+                <img src="./src/img/Logo.svg" alt="Healthia Logo" class="mr-3 h-6 sm:h-10 md:h-12 lg:h-14">
+            
+            </div>
+            <!-- Menú de navegación para pantallas grandes -->
+            <div class="hidden md:flex items-center space-x-1">
+               
+                <a href="/productos" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border">PRODUCTOS</a>
+            
+                <a href="/clientes" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border">CLIENTES</a>
+                <a href="/nosotros" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border">NOSOTROS</a>
+                <a href="/contacto" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border">CONTACTO</a>
+            </div>
+            <!-- Botón de menú para pantallas pequeñas -->
+            <button class="md:hidden text-gray-700 outline-none p-2 rounded-md">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="content-layer">
+    <section class="banner bg-cover bg-center bg-no-repeat p-20 sm:p-32 md:p-48 lg:p-48 xl:p-72 2xl:p-80">
+        
+      </section>
+
+<!-- Contenedor principal de la sección -->
+<div class="relative px-4 sm:px-6 lg:px-8 py-4 sm:py-10 mt-4 md:mt-10">
+ 
+    <h2 class="titulos text-2xl sm:text-4xl lg:text-[42px] text-custom-color mx-auto lg:mx-0 lg:ml-[11%] mt-5 sm:mt-8 lg:mt-1 text-center lg:text-left mb-4 sm:mb-8">Productos</h2>
+
+    
+  <div class="max-w-6xl mx-auto">
+    <div class="swiper mySwiper rounded-xl overflow-hidden">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <!-- Asegúrate de que las imágenes sean responsivas con w-full y h-auto -->
+        <div class="swiper-slide">
+          <img src="./src/img/fondobanner.svg" alt="Slide 1" class="w-full h-auto">
+        </div>
+        <div class="swiper-slide">
+          <img src="./src/img/fondobanner.svg" alt="Slide 2" class="w-full h-auto">
+        </div>
+        <div class="swiper-slide">
+          <img src="./src/img/fondobanner.svg" alt="Slide 3" class="w-full h-auto">
+        </div>
+      </div>
+      <!-- Si necesitas paginación -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+</div>
+<!-- Título de la sección Clientes -->
+<h2 class="titulos text-2xl sm:text-4xl lg:text-[42px]  text-custom-color mx-auto text-center  mb-2 sm:mb-8">Clientes</h2>
+<div class="flex justify-center items-center space-x-2 sm:space-x-4 sm:mb-10">
+  <!-- Logo Cliente 1 -->
+  <div class="p-2 sm:p-2">
+    <img src="./src/img/neuro.svg" alt="Cliente 1" class="h-auto w-30 sm:w-auto">
+  </div>
+  <!-- Logo Cliente 2 -->
+  <div class="p-2 sm:p-2">
+    <img src="./src/img/fisio.svg" alt="Cliente 2" class="h-auto w-30 sm:w-auto">
+  </div>
+  <!-- Logo Cliente 3 -->
+  <div class="p-2 sm:p-2">
+    <img src="./src/img/vida.svg" alt="Cliente 3" class="h-auto w-30 sm:w-auto">
+  </div>
+</div>
+
+
+
+  
+  
+      <!-- Sección principal con gradiente -->
+<div class="empresa p-6">
+
+
+
+  <!-- Títulos de la sección -->
+  <h2 class="titulos text-center text-white text-2xl md:text-3xl lg:text-[42px] mb-8 sm:mb-10  my-4 sm:my-8">Nuestro propósito</h2>
+  <!-- Contenedor Principal -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 my-4 mx-10 cursor-pointer">
+  <div class="group bg-white bg-opacity-90 rounded-xl overflow-hidden shadow-lg transition ease-in-out duration-300 p-6 flex justify-center flex-col items-center relative aspect-w-1 aspect-h-1 backdrop-filter backdrop-blur-sm">
+    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-300 group-hover:-translate-y-16 ">
+      <img src="./src/img/mision.svg" alt="Misión" class="h-16 w-16 sm:h-24 sm:w-24 transition-all duration-300 group-hover:h-16 group-hover:w-16 group-hover:opacity-0 md:group-hover:opacity-100 ">
+      <h3 class="titulo-tarjeta text-xl transition-all duration-300 group-hover:text-lg group-hover:mt-2 group-hover:opacity-0 md:group-hover:opacity-100 ">Misión</h3>
+    </div>
+    <p class="texto-tarjeta opacity-0 group-hover:opacity-100 transition-all duration-300 absolute bottom-2 sm:bottom-8 inset-x-4">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laudantium dicta praesentium quisquam earum consectetur, reprehenderit autem, eius eveniet optio deserunt voluptatibus neque libero magnam! Temporibus quibusdam eveniet harum necessitatibus?
+    </p>
+  </div>
+
+  <div class="group bg-white bg-opacity-90 rounded-xl overflow-hidden shadow-lg transition ease-in-out duration-300 p-6 flex justify-center flex-col items-center relative aspect-w-1 aspect-h-1 backdrop-filter backdrop-blur-sm">
+    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-300 group-hover:-translate-y-16">
+      <img src="./src/img/vision.svg" alt="Misión" class="h-16 w-16 sm:h-24 sm:w-24 transition-all duration-300 group-hover:h-16 group-hover:w-16 group-hover:opacity-0 md:group-hover:opacity-100">
+      <h3 class="titulo-tarjeta text-xl mt-2 transition-all duration-300 group-hover:text-lg group-hover:mt-2 group-hover:opacity-0 md:group-hover:opacity-100">Visión</h3>
+    </div>
+    <p class="texto-tarjeta opacity-0 group-hover:opacity-100 transition-all duration-300 absolute bottom-2 sm:bottom-8 inset-x-4">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laudantium dicta praesentium quisquam earum consectetur, reprehenderit autem, eius eveniet optio deserunt voluptatibus neque libero magnam! Temporibus quibusdam eveniet harum necessitatibus?
+    </p>
+  </div>
+
+  <div class="group bg-white bg-opacity-90 rounded-xl overflow-hidden shadow-lg transition ease-in-out duration-300 p-6 flex justify-center flex-col items-center relative aspect-w-1 aspect-h-1 backdrop-filter backdrop-blur-sm">
+    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-300 group-hover:-translate-y-16">
+      <img src="./src/img/valores.svg" alt="Misión" class="h-16 w-16 sm:h-24 sm:w-24 transition-all duration-300 group-hover:h-16 group-hover:w-16 group-hover:opacity-0 md:group-hover:opacity-100">
+      <h3 class=" titulo-tarjeta text-xl mt-2 transition-all duration-300 group-hover:text-lg group-hover:mt-2 group-hover:opacity-0 md:group-hover:opacity-100">Valores</h3>
+    </div>
+    <p class="texto-tarjeta opacity-0 group-hover:opacity-100 transition-all duration-300 absolute bottom-2 sm:bottom-8 inset-x-4">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laudantium dicta praesentium quisquam earum consectetur, reprehenderit autem, eius eveniet optio deserunt voluptatibus neque libero magnam! Temporibus quibusdam eveniet harum necessitatibus?
+    </p>
+  </div> 
+</div>
+
+
+  <h2 class="titulos text-center text-white text-2xl md:text-3xl lg:text-[42px] mt-8 sm:mt-20 mb-4 sm:mb-10 my-10">Quiénes somos</h2>
+
+  <!-- Contenedor de tarjetas de equipo -->
+ <!--Mobile-->
+  <div class="swiper  myTeamSwiper md:hidden">
+    <div class="swiper-wrapper">
+      <!-- Cada tarjeta se convierte en un 'slide' -->
+      <div class="swiper-slide -mt-10 ">
+        <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden scale-75">
+          <img src="./src/img/foto1.png" alt="Nombre Apellido" class="w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-1">Nombre Apellido</h3>
+            <p class="font-medium text-gray-700">Puesto de trabajo</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide -mt-10">
+        <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden scale-75">
+          <img src="./src/img/foto2.png" alt="Nombre Apellido" class="w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-1">Nombre Apellido</h3>
+            <p class="font-medium text-gray-700">Puesto de trabajo</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide -mt-10">
+        <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden scale-75">
+          <img src="./src/img/foto3.png" alt="Nombre Apellido" class="w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-1">Nombre Apellido</h3>
+            <p class="font-medium text-gray-700">Puesto de trabajo</p>
+          </div>
+        </div>
+      </div>  <div class="swiper-slide -mt-10">
+        <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden  scale-75">
+          <img src="./src/img/foto4.png" alt="Nombre Apellido" class="w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-1">Nombre Apellido</h3>
+            <p class="font-medium text-gray-700">Puesto de trabajo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Si deseas paginación -->
+    <div class="swiper-pagination team-swiper-pagination"></div>
+  </div>
+<!--Desktop-->
+  <div class="md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 my-4 mx-10 hidden">
+    <!-- Tarjeta Equipo 1 -->
+    <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden">
+      <img src="./src/img/foto1.png" class="w-full">
+      <div class="p-4">
+      <h3 class="text-xl font-semibold mb-1">Nombre Apellido</h3>
+      <p class="font-medium text-gray-700">Puesto de trabajo</p>
+    </div>
+    </div>
+    
+    <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden">
+      <img src="./src/img/foto2.png" class="w-full">
+      <div class="p-4">
+      <h3 class="text-xl font-semibold mb-1">Nombre Apellido</h3>
+      <p class="font-medium text-gray-700">Puesto de trabajo</p>
+    </div>
+    </div>
+
+    <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden">
+      <img src="./src/img/foto3.png" class="w-full">
+      <div class="p-4">
+      <h3 class="text-xl font-semibold mb-1">Nombre Apellido</h3>
+      <p class="font-medium text-gray-700">Puesto de trabajo</p>
+    </div>
+    </div>
+     
+    <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden">
+      <img src="./src/img/foto4.png" class="w-full">
+      <div class="p-4">
+      <h3 class="text-xl font-semibold mb-1">Nombre Apellido</h3>
+      <p class="font-medium text-gray-700">Puesto de trabajo</p>
+    </div>
+    </div>
+    
+
+</div>
+</div>
+
+
+<!--Form-->
+<div class="flex flex-col items-center justify-center min-h-screen bg-transparent px-4 mt-0">
+  <div class="w-full px-0 md:px-64">
+    <h1 class="titulos text-2xl sm:text-4xl lg:text-[42px] text-custom-color text-center md:text-left mb-4">Contacto</h1>
+    <p class="subtitulo-form text-center md:text-left mb-2">Comenzá a implementar tecnología en salud</p>
+
+    <form action="#" method="POST" class=" px-0 pt-6 pb-8 mb-4">
+      <div class="mb-4">
+    
+        <input type="text" id="name" name="name" placeholder="Nombre y apellido" class="input-style" required >
+      </div>
+
+      <div class="mb-4">
+       
+        <input type="email" id="email" name="email" placeholder="Correo electrónico" class="input-style" required >
+      </div>
+      <div class="mb-4">
+       
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="Whatsapp" class="input-style" required>
+      </div>
+
+      <div class="mb-4">
+     
+        <input type="text" id="role" name="role" placeholder="Rol/Profesión" class="input-style" required>
+      </div>
+
+      <div class="mb-6">
+      
+        <input type="text" id="company" name="company" placeholder="Empresa/Asociación" class="input-style" required>
+      </div>
+
+      <div class="flex items-center justify-center">
+        <button class="btn-enviar" type="submit">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+      
+</div>
+
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  // Parámetros para el primer Swiper existente
+  var swiper = new Swiper('.mySwiper', {
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  // Variable para el segundo Swiper (debería estar fuera del scope de la función initTeamSwiper)
+  var teamSwiper;
+
+  function initTeamSwiper() {
+    if (window.innerWidth < 600 && !teamSwiper) {
+      teamSwiper = new Swiper('.myTeamSwiper', {
+        // Parámetros opcionales específicos para el segundo Swiper
+        loop: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.team-swiper-pagination',
+          clickable: true,
+          
+        },
+        // Omitimos la navegación en este caso, pero puedes agregarla si es necesario
+      });
+    } else if (window.innerWidth >= 600 && teamSwiper) {
+      teamSwiper.destroy(true, true);
+      teamSwiper = undefined;
+    }
+  }
+
+  // Inicializar el segundo Swiper al cargar la página
+  initTeamSwiper();
+
+  // Re-inicializar el segundo Swiper al cambiar el tamaño de la ventana
+  window.addEventListener('resize', initTeamSwiper);
+</script>
+
+</html>
