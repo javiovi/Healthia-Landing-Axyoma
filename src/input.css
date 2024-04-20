@@ -4,17 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.content-layer{
-  background-image: url('/src/img/BG.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-}
-
-
-.banner {
-    background-image: url('/src/img/banner.svg'); 
-  }
 
 .titulos{
   font-family: Epilogue;
@@ -33,11 +22,13 @@
   text-align: center; 
 }
 
-
-.gradient-border:hover {
-  background-image: url('/src/img/hoverbutton.svg'); 
+.title{
+  font-family: Epilogue;
 }
-
+.subtitle {
+  font-family: Epilogue;
+  font-size: 20px;
+}
 
 .custom-color{
   font-size: 42px;
@@ -208,6 +199,45 @@ font-weight: lighter;
 line-height: 118.4%;
 
 }
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.float {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.5s ease forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.5s ease forwards;
+}
+
 
 @media (min-width: 640px) {
   .aspect-w-1 {
@@ -250,9 +280,7 @@ line-height: 118.4%;
     width: 10px;
     height: 10px;
   }
-  .content-layer{
-    background-image: none;
-  }
+  
   .subtitulo-form {
    
   font-size: 20px;
@@ -260,10 +288,48 @@ line-height: 118.4%;
   }
 
 }
-@media (max-width: 768px) {
-  .empresa
-  {
-    background: linear-gradient(123deg, #000 6.41%, #1387CB 141.44%);
 
+@keyframes float-b {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-b {
+  animation: float 2s ease-in-out infinite;
+}
+
+
+
+
+@media (max-width: 768px) {
+ 
+  .foot-copy{
+    font-size: 12px;
+
+  }
+
+.subtitle{
+  font-size: 14px;
+}  
+.empresa
+{
+  background: linear-gradient(123deg, #000 6.41%, #1387CB 141.44%);
+
+}
+
+.banner {
+  background: linear-gradient(88deg, #3B3D40 -4.34%, #04A2FD 127.01%);
+}
+}
+@media (max-width: 400px) {
+  .text-footer{
+ font-size: 12px;
+  }
+  .foot-copy{
+    font-size: 10px;
   }
 }

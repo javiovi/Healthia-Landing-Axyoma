@@ -7,14 +7,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0w-auto..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
- 
-
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <link href="./dist/output.css" rel="stylesheet"> 
 
     <title>Healthia</title>
 </head>
+<style>
+  .content-layer {
+
+    --bg-image: none;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+  }
+
+  @media (min-width: 768px) {
+    .content-layer {
+      --bg-image: url('./src/img/BG.svg'); 
+    }
+  }
+</style>
 <body class=" bg-[#F3F3F3] ">
  
 
@@ -28,25 +45,47 @@
             <!-- Menú de navegación para pantallas grandes -->
             <div class="hidden md:flex items-center space-x-1">
                
-                <a href="/productos" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border">PRODUCTOS</a>
+                <a href="#" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border" style="background-image: none;" onmouseover="this.style.backgroundImage='url(\'./src/img/hoverbutton.svg\')'" onmouseout="this.style.backgroundImage='none'">PRODUCTOS</a>
             
-                <a href="/clientes" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border">CLIENTES</a>
-                <a href="/nosotros" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border">NOSOTROS</a>
-                <a href="/contacto" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border">CONTACTO</a>
+                <a href="#" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border"style="background-image: none;" onmouseover="this.style.backgroundImage='url(\'./src/img/hoverbutton.svg\')'" onmouseout="this.style.backgroundImage='none'">CLIENTES</a>
+                <a href="#" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border" style="background-image: none;" onmouseover="this.style.backgroundImage='url(\'./src/img/hoverbutton.svg\')'" onmouseout="this.style.backgroundImage='none'">NOSOTROS</a>
+                <a href="#" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border" style="background-image: none;" onmouseover="this.style.backgroundImage='url(\'./src/img/hoverbutton.svg\')'" onmouseout="this.style.backgroundImage='none'">CONTACTO</a>
             </div>
             <!-- Botón de menú para pantallas pequeñas -->
-            <button class="md:hidden text-gray-700 outline-none p-2 rounded-md">
+            <button class="md:hidden text-gray-700 outline-none p-2 rounded-md" id="mobile-menu-button">
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
-            </button>
+              </button> 
+               <!-- Menú de navegación móvil
+    <div class="hidden w-full mt-4 md:mt-0" id="mobile-menu">
+            <a href="#" class="block py-2 px-3 text-center text-sm font-medium text-custom-blue rounded-md font-epilogue">PRODUCTOS</a>
+            <a href="#" class="block py-2 px-3 text-center text-sm font-medium text-custom-blue rounded-md font-epilogue">CLIENTES</a>
+            <a href="#" class="block py-2 px-3 text-center text-sm font-medium text-custom-blue rounded-md font-epilogue">NOSOTROS</a>
+            <a href="#" class="block py-2 px-3 text-center text-sm font-medium text-custom-blue rounded-md font-epilogue">CONTACTO</a>
         </div>
+  </div>-->
+                </div>
     </nav>
 
-    <div class="content-layer">
-    <section class="banner bg-cover bg-center bg-no-repeat p-20 sm:p-32 md:p-48 lg:p-48 xl:p-72 2xl:p-80">
-        
-      </section>
+    <div class="content-layer" style="background-image: var(--bg-image);">
+     
+  <!-- BANNER-->
+  <section class="banner flex flex-col md:flex-row items-center justify-around p-10 md:p-20 ">
+  
+    <!-- Contenedor de texto -->
+    <div class="text-container flex flex-col justify-center items-center md:items-start mb-8 md:mb-0">
+      <h1 class="title text-4xl md:text-6xl font-bold text-white text-center md:text-left " data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Tecnologías<br> de vanguardia</h1>
+      <p class="subtitle text-white text-center md:text-left mt-4 md:mt-6 " data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" data-aos-delay="300">Desarrollo de herramientas digitales para<br> el área de la salud</p>
+    </div>
+  
+    <!-- Contenedor de imagen -->
+    <div class="image-container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+      <img src="./src/img/dibujo-banner.svg" alt="Descripción de la imagen" class="w-full md:w-full float-b" style="max-width:400px;" />
+    </div>
+    
+  </section>
+
 
 <!-- Contenedor principal de la sección -->
 <div class="relative px-4 sm:px-6 lg:px-8 py-4 sm:py-10 mt-4 md:mt-10">
@@ -76,21 +115,22 @@
 
 </div>
 <!-- Título de la sección Clientes -->
-<h2 class="titulos text-2xl sm:text-4xl lg:text-[42px]  text-custom-color mx-auto text-center  mb-2 sm:mb-8">Clientes</h2>
-<div class="flex justify-center items-center space-x-2 sm:space-x-4 sm:mb-10">
+<h2 class="titulos text-2xl sm:text-4xl lg:text-[42px]  text-custom-color mx-auto text-center  mb-4 sm:mb-8">Clientes</h2>
+<div class="flex justify-center items-center -space-x-1 md:space-x-4 mb-8">
   <!-- Logo Cliente 1 -->
-  <div class="p-2 sm:p-2">
+  <a href="/ruta-cliente-1" class="p-2 sm:p-2 float">
     <img src="./src/img/neuro.svg" alt="Cliente 1" class="h-auto w-30 sm:w-auto">
-  </div>
+  </a>
   <!-- Logo Cliente 2 -->
-  <div class="p-2 sm:p-2">
+  <a href="/ruta-cliente-2" class="p-2 sm:p-2 float">
     <img src="./src/img/fisio.svg" alt="Cliente 2" class="h-auto w-30 sm:w-auto">
-  </div>
+  </a>
   <!-- Logo Cliente 3 -->
-  <div class="p-2 sm:p-2">
+  <a href="/ruta-cliente-3" class="p-2 sm:p-2 float">
     <img src="./src/img/vida.svg" alt="Cliente 3" class="h-auto w-30 sm:w-auto">
-  </div>
+  </a>
 </div>
+
 
 
 
@@ -104,8 +144,8 @@
   <!-- Títulos de la sección -->
   <h2 class="titulos text-center text-white text-2xl md:text-3xl lg:text-[42px] mb-8 sm:mb-10  my-4 sm:my-8">Nuestro propósito</h2>
   <!-- Contenedor Principal -->
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 my-4 mx-10 cursor-pointer">
-  <div class="group bg-white bg-opacity-90 rounded-xl overflow-hidden shadow-lg transition ease-in-out duration-300 p-6 flex justify-center flex-col items-center relative aspect-w-1 aspect-h-1 backdrop-filter backdrop-blur-sm">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-4 my-4 mx-10 cursor-pointer">
+  <div class="group bg-white bg-opacity-90 rounded-xl overflow-hidden shadow-lg transition ease-in-out duration-300 p-6 flex justify-center flex-col items-center relative aspect-w-1 aspect-h-1 backdrop-filter backdrop-blur-sm" data-aos="fade-left" data-aos-offset="300">
     <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-300 group-hover:-translate-y-16 ">
       <img src="./src/img/mision.svg" alt="Misión" class="h-16 w-16 sm:h-24 sm:w-24 transition-all duration-300 group-hover:h-16 group-hover:w-16 group-hover:opacity-0 md:group-hover:opacity-100 ">
       <h3 class="titulo-tarjeta text-xl transition-all duration-300 group-hover:text-lg group-hover:mt-2 group-hover:opacity-0 md:group-hover:opacity-100 ">Misión</h3>
@@ -115,7 +155,7 @@
     </p>
   </div>
 
-  <div class="group bg-white bg-opacity-90 rounded-xl overflow-hidden shadow-lg transition ease-in-out duration-300 p-6 flex justify-center flex-col items-center relative aspect-w-1 aspect-h-1 backdrop-filter backdrop-blur-sm">
+  <div class="group bg-white bg-opacity-90 rounded-xl overflow-hidden shadow-lg transition ease-in-out duration-300 p-6 flex justify-center flex-col items-center relative aspect-w-1 aspect-h-1 backdrop-filter backdrop-blur-sm" data-aos="fade-out" data-aos-offset="300">
     <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-300 group-hover:-translate-y-16">
       <img src="./src/img/vision.svg" alt="Misión" class="h-16 w-16 sm:h-24 sm:w-24 transition-all duration-300 group-hover:h-16 group-hover:w-16 group-hover:opacity-0 md:group-hover:opacity-100">
       <h3 class="titulo-tarjeta text-xl mt-2 transition-all duration-300 group-hover:text-lg group-hover:mt-2 group-hover:opacity-0 md:group-hover:opacity-100">Visión</h3>
@@ -125,7 +165,7 @@
     </p>
   </div>
 
-  <div class="group bg-white bg-opacity-90 rounded-xl overflow-hidden shadow-lg transition ease-in-out duration-300 p-6 flex justify-center flex-col items-center relative aspect-w-1 aspect-h-1 backdrop-filter backdrop-blur-sm">
+  <div class="group bg-white bg-opacity-90 rounded-xl overflow-hidden shadow-lg transition ease-in-out duration-300 p-6 flex justify-center flex-col items-center relative aspect-w-1 aspect-h-1 backdrop-filter backdrop-blur-sm" data-aos="fade-right" data-aos-offset="300">
     <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-300 group-hover:-translate-y-16">
       <img src="./src/img/valores.svg" alt="Misión" class="h-16 w-16 sm:h-24 sm:w-24 transition-all duration-300 group-hover:h-16 group-hover:w-16 group-hover:opacity-0 md:group-hover:opacity-100">
       <h3 class=" titulo-tarjeta text-xl mt-2 transition-all duration-300 group-hover:text-lg group-hover:mt-2 group-hover:opacity-0 md:group-hover:opacity-100">Valores</h3>
@@ -186,7 +226,7 @@
 <!--Desktop-->
   <div class="md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 my-4 mx-10 hidden">
     <!-- Tarjeta Equipo 1 -->
-    <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden">
+    <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden"data-aos="fade-left" data-aos-offset="300">
       <img src="./src/img/foto1.png" class="w-full">
       <div class="p-4">
       <h3 class="text-xl font-semibold mb-1">Nombre Apellido</h3>
@@ -194,7 +234,7 @@
     </div>
     </div>
     
-    <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden">
+    <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center"data-aos="fade-right" data-aos-offset="300">
       <img src="./src/img/foto2.png" class="w-full">
       <div class="p-4">
       <h3 class="text-xl font-semibold mb-1">Nombre Apellido</h3>
@@ -202,7 +242,7 @@
     </div>
     </div>
 
-    <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden">
+    <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden"data-aos="fade-left" data-aos-offset="300">
       <img src="./src/img/foto3.png" class="w-full">
       <div class="p-4">
       <h3 class="text-xl font-semibold mb-1">Nombre Apellido</h3>
@@ -210,7 +250,7 @@
     </div>
     </div>
      
-    <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden">
+    <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden" data-aos="fade-right" data-aos-offset="300">
       <img src="./src/img/foto4.png" class="w-full">
       <div class="p-4">
       <h3 class="text-xl font-semibold mb-1">Nombre Apellido</h3>
@@ -224,7 +264,7 @@
 
 
 <!--Form-->
-<div class="flex flex-col items-center justify-center min-h-screen bg-transparent px-4 -mt-20 md:mt-4 ">
+<div class="flex flex-col items-center justify-center min-h-screen bg-transparent px-4 mt-0 md:mt-4 pb-16 pt-10">
   <div class="w-full px-0 md:px-64">
     <h1 class="titulos text-2xl sm:text-4xl lg:text-[42px] text-custom-color text-center md:text-left mb-4">Contacto</h1>
     <p class="subtitulo-form text-center md:text-left mb-2 mx-10 md:mx-0">Comenzá a implementar tecnología en salud</p>
@@ -263,7 +303,7 @@
   </div>
 </div> 
 </div>
-
+  
 <footer class="footer -mt-20">
   <div class="w-full mx-auto sm:px-6 py-4 px-8 md:px-16">
     <!-- Top section -->
@@ -274,7 +314,7 @@
        
       </div>
       <!-- Menú de navegación -->
-      <nav class="space-x-6 ">
+      <nav class="space-x-6">
         <a href="#" class="text-footer">Productos</a>
         <a href="#" class="text-footer">Clientes</a>
         <a href="#" class="text-footer">Nosotros</a>
@@ -291,10 +331,21 @@
     </div>
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
 
+  const menuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+// Añadir un evento 'click' al botón de menú
+menuButton.addEventListener('click', function() {
+    // Alternar la clase 'hidden' en el menú móvil
+    mobileMenu.classList.toggle('hidden');
+});
+</script>
 </body>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   // Parámetros para el primer Swiper existente
   var swiper = new Swiper('.mySwiper', {
