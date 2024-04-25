@@ -39,32 +39,33 @@
         <div class="container mx-auto flex items-center justify-between">
             <!-- Logo y nombre de la compañía -->
             <div class="flex items-center">
-                <img src="./src/img/Logo.svg" alt="Healthia Logo" class="mr-3 h-6 sm:h-10 md:h-12 lg:h-14">
+                <img src="./src/img/Logo.svg" alt="Healthia Logo" class="mr-3 h-10 sm:h-10 md:h-12 lg:h-14">
             
             </div>
             <!-- Menú de navegación para pantallas grandes -->
             <div class="hidden md:flex items-center space-x-1">
                
-                <a href="#" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border" style="background-image: none;" onmouseover="this.style.backgroundImage='url(\'./src/img/hoverbutton.svg\')'" onmouseout="this.style.backgroundImage='none'">PRODUCTOS</a>
+                <a href="#productos" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border" style="background-image: none;" onmouseover="this.style.backgroundImage='url(\'./src/img/hoverbutton.svg\')'" onmouseout="this.style.backgroundImage='none'">PRODUCTOS</a>
             
-                <a href="#" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border"style="background-image: none;" onmouseover="this.style.backgroundImage='url(\'./src/img/hoverbutton.svg\')'" onmouseout="this.style.backgroundImage='none'">CLIENTES</a>
-                <a href="#" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border" style="background-image: none;" onmouseover="this.style.backgroundImage='url(\'./src/img/hoverbutton.svg\')'" onmouseout="this.style.backgroundImage='none'">NOSOTROS</a>
-                <a href="#" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border" style="background-image: none;" onmouseover="this.style.backgroundImage='url(\'./src/img/hoverbutton.svg\')'" onmouseout="this.style.backgroundImage='none'">CONTACTO</a>
+                <a href="#clientes" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border"style="background-image: none;" onmouseover="this.style.backgroundImage='url(\'./src/img/hoverbutton.svg\')'" onmouseout="this.style.backgroundImage='none'">CLIENTES</a>
+                <a href="#nosotros" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border" style="background-image: none;" onmouseover="this.style.backgroundImage='url(\'./src/img/hoverbutton.svg\')'" onmouseout="this.style.backgroundImage='none'">NOSOTROS</a>
+                <a href="#contacto" class="py-2 px-3 text-sm font-medium text-custom-blue rounded-md font-epilogue gradient-border" style="background-image: none;" onmouseover="this.style.backgroundImage='url(\'./src/img/hoverbutton.svg\')'" onmouseout="this.style.backgroundImage='none'">CONTACTO</a>
             </div>
             <!-- Botón de menú para pantallas pequeñas -->
-            <button class="md:hidden text-gray-700 outline-none p-2 rounded-md" id="mobile-menu-button">
+                <button class="md:hidden text-gray-700 outline-none p-2 rounded-md" id="mobile-menu-button">
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
               </button> 
-               <!-- Menú de navegación móvil
+            
+               <!-- Menú de navegación móvil -->
     <div class="hidden w-full mt-4 md:mt-0" id="mobile-menu">
-            <a href="#" class="block py-2 px-3 text-center text-sm font-medium text-custom-blue rounded-md font-epilogue">PRODUCTOS</a>
-            <a href="#" class="block py-2 px-3 text-center text-sm font-medium text-custom-blue rounded-md font-epilogue">CLIENTES</a>
-            <a href="#" class="block py-2 px-3 text-center text-sm font-medium text-custom-blue rounded-md font-epilogue">NOSOTROS</a>
-            <a href="#" class="block py-2 px-3 text-center text-sm font-medium text-custom-blue rounded-md font-epilogue">CONTACTO</a>
+            <a href="#productos" class="block py-2 px-3 text-center text-sm font-medium text-custom-blue rounded-md font-epilogue" >PRODUCTOS</a>
+            <a href="#clientes" class="block py-2 px-3 text-center text-sm font-medium text-custom-blue rounded-md font-epilogue">CLIENTES</a>
+            <a href="#nosotros" class="block py-2 px-3 text-center text-sm font-medium text-custom-blue rounded-md font-epilogue">NOSOTROS</a>
+            <a href="#contacto" class="block py-2 px-3 text-center text-sm font-medium text-custom-blue rounded-md font-epilogue">CONTACTO</a>
         </div>
-  </div>-->
+  </div>
                 </div>
     </nav>
 
@@ -88,7 +89,7 @@
 
 
 <!-- Contenedor principal de la sección -->
-<div class="relative px-4 sm:px-6 lg:px-8 py-4 sm:py-10 mt-4 md:mt-10">
+<div class="relative px-4 sm:px-6 lg:px-8 py-4 sm:py-10 mt-4 md:mt-10" id="productos">
  
     <h2 class="titulos text-2xl sm:text-4xl lg:text-[42px] text-custom-color mx-auto lg:mx-0 lg:ml-[11%] mt-5 sm:mt-8 lg:mt-1 text-center lg:text-left mb-4 sm:mb-8">Productos</h2>
 
@@ -96,8 +97,7 @@
   <div class="max-w-6xl mx-auto">
     <div class="swiper mySwiper rounded-xl overflow-hidden">
       <div class="swiper-wrapper">
-        <!-- Slides -->
-        <!-- Asegúrate de que las imágenes sean responsivas con w-full y h-auto -->
+    
         <div class="swiper-slide">
           <img src="./src/img/fondobanner.svg" alt="Slide 1" class="w-full h-auto">
         </div>
@@ -108,14 +108,13 @@
           <img src="./src/img/fondobanner.svg" alt="Slide 3" class="w-full h-auto">
         </div>
       </div>
-      <!-- Si necesitas paginación -->
+  
       <div class="swiper-pagination"></div>
     </div>
   </div>
-
-</div>
+</div> 
 <!-- Título de la sección Clientes -->
-<h2 class="titulos text-2xl sm:text-4xl lg:text-[42px]  text-custom-color mx-auto text-center  mb-4 sm:mb-8">Clientes</h2>
+<h2 class="titulos text-2xl sm:text-4xl lg:text-[42px]  text-custom-color mx-auto text-center  mb-4 sm:mb-8" id="clientes">Clientes</h2>
 <div class="flex justify-center items-center -space-x-1 md:space-x-4 mb-8">
   <!-- Logo Cliente 1 -->
   <a href="/ruta-cliente-1" class="p-2 sm:p-2 float">
@@ -137,7 +136,7 @@
   
   
       <!-- Sección principal con gradiente -->
-<div class="empresa p-6">
+<div class="empresa p-6" >
 
 
 
@@ -177,7 +176,7 @@
 </div>
 
 
-  <h2 class="titulos text-center text-white text-2xl md:text-3xl lg:text-[42px] mt-8 sm:mt-20 mb-4 sm:mb-10 my-10">Quiénes somos</h2>
+  <h2 class="titulos text-center text-white text-2xl md:text-3xl lg:text-[42px] mt-8 sm:mt-20 mb-4 sm:mb-10 my-10" id="nosotros">Quiénes somos</h2>
 
   <!-- Contenedor de tarjetas de equipo -->
  <!--Mobile-->
@@ -224,7 +223,7 @@
     <div class="swiper-pagination team-swiper-pagination"></div>
   </div>
 <!--Desktop-->
-  <div class="md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 my-4 mx-10 hidden">
+  <div class="md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 my-4 mx-10 hidden" >
     <!-- Tarjeta Equipo 1 -->
     <div class="bg-white rounded-custom shadow-lg flex flex-col items-center text-center overflow-hidden"data-aos="fade-left" data-aos-offset="300">
       <img src="./src/img/foto1.png" class="w-full">
@@ -264,7 +263,7 @@
 
 
 <!--Form-->
-<div class="flex flex-col items-center justify-center min-h-screen bg-transparent px-4 mt-0 md:mt-4 pb-16 pt-10">
+<div class="flex flex-col items-center justify-center min-h-screen bg-transparent px-4 mt-0 md:mt-4 pb-16 pt-10" id="contacto">
   <div class="w-full px-0 md:px-64">
     <h1 class="titulos text-2xl sm:text-4xl lg:text-[42px] text-custom-color text-center md:text-left mb-4">Contacto</h1>
     <p class="subtitulo-form text-center md:text-left mb-2 mx-10 md:mx-0">Comenzá a implementar tecnología en salud</p>
@@ -332,17 +331,38 @@
 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuLinks = mobileMenu.querySelectorAll('a');
+
+  // Función para alternar el menú
+  function toggleMenu() {
+    mobileMenu.classList.toggle('open');
+    // Alternar el desplazamiento del body
+    document.body.classList.toggle('no-scroll');
+  }
+
+  // Evento click para el botón del menú
+  menuButton.addEventListener('click', toggleMenu);
+
+  // Eventos click para cada enlace
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      // Cerrar el menú al hacer clic en un enlace
+      if (mobileMenu.classList.contains('open')) {
+        toggleMenu();
+      }
+    });
+  });
+});
+
+</script>
 <script>
   AOS.init();
 
-  const menuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
-
-// Añadir un evento 'click' al botón de menú
-menuButton.addEventListener('click', function() {
-    // Alternar la clase 'hidden' en el menú móvil
-    mobileMenu.classList.toggle('hidden');
-});
 </script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -364,7 +384,12 @@ menuButton.addEventListener('click', function() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+  
+
+    
   });
+
+
 
   // Variable para el segundo Swiper (debería estar fuera del scope de la función initTeamSwiper)
   var teamSwiper;
