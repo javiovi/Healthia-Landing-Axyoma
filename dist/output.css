@@ -605,8 +605,12 @@ video {
   right: 1rem;
 }
 
-.bottom-2{
-  bottom: 0.5rem;
+.bottom-4{
+  bottom: 1rem;
+}
+
+.bottom-6{
+  bottom: 1.5rem;
 }
 
 .top-32{
@@ -695,6 +699,10 @@ video {
 
 .flex{
   display: flex;
+}
+
+.table{
+  display: table;
 }
 
 .grid{
@@ -1231,6 +1239,52 @@ body {
   /* Color de fondo del botón al hacer hover */
 }
 
+/* Estilos para el modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 15px;
+  border: 1px solid #888;
+  width: 30%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-letter{
+  font-size: 18px ;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 .footer{
   background-color: #041926;
 }
@@ -1449,6 +1503,32 @@ body {
   touch-action: none;
 }
 
+/* MODAL MOBILE */
+
+@media (max-width: 600px) {
+  .modal-content {
+    width: 90%;
+    margin: 10% auto;
+    padding: 10px;
+  }
+
+  .close {
+    font-size: 24px;
+    top: 5px;
+    right: 10px;
+  }
+
+  .modal-letter {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal-content {
+    margin: 20% auto;
+  }
+}
+
 .group:hover .group-hover\:mt-2{
   margin-top: 0.5rem;
 }
@@ -1480,8 +1560,12 @@ body {
 }
 
 @media (min-width: 640px){
-  .sm\:bottom-8{
-    bottom: 2rem;
+  .sm\:bottom-10{
+    bottom: 2.5rem;
+  }
+
+  .sm\:bottom-14{
+    bottom: 3.5rem;
   }
 
   .sm\:my-8{
